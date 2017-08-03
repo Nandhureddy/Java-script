@@ -1,0 +1,15 @@
+<html>
+
+	<body>
+		<script>
+			var subjects = new Array("English","Maths","science"); // Created new array instance using new keyword. 
+			for (i=0;i<subjects.length;i++){
+			
+				document.write(subjects[i]+ "<br>");
+			}
+		
+		</script>
+	
+	</body>
+
+</html>
