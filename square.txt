@@ -1,0 +1,12 @@
+<html>
+<body>
+<script>  
+function square(number){  
+alert(number*number);  // square root of a number.
+}  
+</script>  
+<form>  
+<input type="button" value="click" onclick="square(4)"/>  
+</form>  
+</body>
+</html>

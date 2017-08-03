@@ -1,0 +1,22 @@
+<html>
+
+<body>
+	<script>
+		function getinfo() {
+		// return value goes here;
+		
+		return "Welcome to our page";
+			
+		}
+		
+	
+	</script>
+	
+	<script>
+		document.write(getinfo());
+	</script>
+
+
+</body>
+
+</html>
