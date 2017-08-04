@@ -1,0 +1,42 @@
+<html>
+	<body>
+		<script>
+			var name = "nandhu";
+			document.write(name.charAt(3) + "<br>"); // using charAt method.
+		</script>
+		
+		<script>
+			
+			var greeting = "Hello !!";
+			var name = "Teddu";
+			var say = greeting.concat(name); // concatings both strings and storing in another variable.
+			
+			document.write(say +"<br/>");
+		
+		</script>
+		
+		<script>
+			var name = "String To LOWER CASE"
+			var convert = name.toLowerCase(); // converting the string into lowercase..
+			document.write(convert +"<br/>");
+		 // in the similar way we can use toUpperCase() method to convert the string into uppercase.
+		</script>
+		
+		<script>
+			var name = "String to Upper case"
+			var con = name.toUpperCase();
+			
+			document.write(con +"<br/>");
+		</script>
+		
+		
+		<script>
+			var name = "   I      Love     My     Teddu        !!!!         ";   // Here I am using trim() to remove the space between the string.
+			var rmspace = name.trim();
+			
+			document.write(rmspace+"<br/>");
+		</script>
+	
+	</body>
+
+</html>
