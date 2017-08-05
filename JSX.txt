@@ -1,0 +1,41 @@
+JSX:
+It is an extension to javascript.It was written to be used with react.
+JSX code similar to HTML.
+
+JSX element:
+JSX elements looks exactly as HTML,The only differece is that we will write the code in java script file instead of HTML file.
+JSX element can be saved in a variable,stored in an object ,stored in an array, or pass to a function.
+
+Example:
+<p>welcome</p>
+
+JSX variable Example:
+const a=<p>welcome</p>;
+
+we can store multiple jsx elements in single variable.A JSX must have only one outer most element.
+Nested:
+const a=(<div>
+	<p>welcome</p>
+	<h1>Hello world</h1>
+	</div>);
+
+Rendering JSX:
+React DOM is the name of a java script library,Its has several react methods which deals with DOM.
+
+reactDOM.render().(It is a way to render JSX)
+
+ReactDOM.render(<h1>Render me</h1>,document.getElementById('container')); Here we passed 2 arguments.First argument is JSX which will display on the screen.
+and it is appended to whatever element is selected by the second argument.
+
+<div id="container">
+	<h1>render me</h1>
+        </div>
+
+Updating rendered elements:
+ We can not change the react elements, once we created.
+If we want to update first we need to create new element then pass it to reactDOM.render();
+
+
+
+
+
