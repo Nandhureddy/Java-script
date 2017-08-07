@@ -1,0 +1,30 @@
+
+Promises:
+Syntax: new promise(/*executor*/ function(reslove,reject) {........});
+
+A function that is passed with the  two arguments resolve and reject. 
+The executor function is executed immediately after implementation of promise, passing resolve and reject functions (the executor is called before the Promise constructor even returns the created object). The resolve and reject functions, when called, resolve or reject the promise, respectively. The executor normally initiates some asynchronous work, and then, once that completes, either calls the resolve function to resolve the promise or else rejects it if an error occurred.
+If an error is thrown in the executor function, the promise is rejected. The return value of the executor is ignored.
+
+
+Creating promise:
+we can create a promise object by using "new" keyword and constructor.
+Constructor will take argument as function i.e,executor function,This function takes two functions as parameters i.e, resolve and reject.
+Resolve:
+When task completes successfully it will return resolve.
+Reject:
+When task fails,it will return reason for failure.
+
+Syntax for creating promise:
+const myPromise = new Promise((resolve, reject) 
+
+Promises Methods:
+
+Promise.all
+Promise.reject
+Promise.resolve
+
+Properties&Methods
+Promise.prototype.constructor
+Promise.prototype.catch
+Promise.prototype.then
