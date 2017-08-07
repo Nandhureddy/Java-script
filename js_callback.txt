@@ -1,0 +1,114 @@
+<html>
+	<body>
+		<script type="text/javascript">
+		var x =	function(){
+				document.write("I am called from inside a function. ");
+			}
+			
+			
+		var y =	function(callback){
+			document.write('Do something!!' +"<br />");
+			callback();
+			}
+			
+		y(x);	
+			
+		</script>
+	
+	</body>
+
+</html>
+
+
+<html>
+	<body>
+		<script>
+			var add = function(a,b){
+				return a+b;
+			};
+			var subtract = function (a,b){
+				return a-b;
+			};
+			
+			var calc = function (num1, num2, callback){
+				return callback(num1,num2);
+				
+			};
+			
+			document.write(calc(2,3,add));
+			
+			
+		</script>
+	
+	</body>
+</html>
+
+ 
+ 
+ <!--Call back functions using Arrays-->
+ 
+  <html>  
+	<body>
+		<script type="text/javascript">
+			var myArray = [{
+			num:5, 
+			str:'apple'
+			},{
+			num:7,
+			str:'cabbage'
+			},{
+			num:3,str:'banana'
+			}];
+		
+			myArray.sort(function(val1,val2){
+				if (val1.str < val2.str){
+					return -1;
+				}else{
+					return 1;
+				}
+			});
+			
+			console.log(myArray);
+		</script>
+	</body>
+ 
+ </html>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
