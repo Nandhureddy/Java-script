@@ -1,0 +1,72 @@
+
+
+<html>
+		<body>
+			<script>
+			
+	// A simple example of how hoisting works with variables.		
+				var value ="myvalue";
+
+(function(){
+  
+  alert(value);
+  
+  var value = "localVariable";
+  
+  alert(value);
+  
+})();
+
+
+			</script>
+		</body>
+</html>
+
+
+ 
+ 
+ 
+<html>
+	<body>
+		<script type="text/javascript">
+		
+		// Example for hositing (function with in a function.)
+		var local =	function (){
+				
+				var value = "Hello";
+				alert(value);
+				
+			function hoisted(){
+				alert("This is the hoisted function!!");
+			}	
+				hoisted();
+			}
+			
+			local();
+			
+			
+			
+		</script>
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
