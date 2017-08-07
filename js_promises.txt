@@ -1,0 +1,27 @@
+<html>
+	<body>
+		<script>
+			var pendingWork = new Promise(function (resolve, reject){
+			
+			// completing the work.
+			
+			var workDone = true;
+			
+			if (workDone){
+				return("Work Finished");
+			}else {
+				return("Still working on. Unfinished!!");
+			}
+			
+			});
+			
+			pendingWork.then(function(fromFinished){
+				document.write('the work is '+ fromFinished);
+			}).catch(function(fromUnfinished){
+				document.write('Pending work' + fromUnfinished);
+			});
+		
+		</script>
+	</body>
+
+</html>
