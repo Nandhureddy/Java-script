@@ -1,0 +1,32 @@
+ Components and props:
+components are like javascript functions.
+components will take inputs as props and it will return the react elements which will describes what should display on screen.
+component name should always start with capital letter.
+
+function Book(props) {
+  return <h1>WrittenBy, {props.author}</h1>;
+}
+
+Here it will take props as input and returns react element
+
+
+class Book extends React.Component {
+  render() {
+    return <h1>writtenby, {this.props.author}</h1>;
+  }
+}
+
+Rendering component:
+
+const p1 = <p>Helloworld</p>
+
+
+function Book(props) {
+  return <h1>Writtenby, {props.author}</h1>;
+}
+
+const element = <book writtenby="fgashjhs" />;
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
