@@ -1,0 +1,59 @@
+Arrow Functions:
+We can  also call arrow functions as fat arrow functions.
+It will use =>, so, it looks like a fat arrow.
+Arrow functions are anonymous.
+Syntax:
+(param1, param2,...., paramN) => { statements }
+(param1, param2,...., paramN) => expression.
+------------------------------------------------------
+Example:
+//(param1, param2,...., paramN) => expression.
+
+//ES5
+var addition = function(a,b) {
+return a+b;
+};
+//ES6
+var addition = (a,b) => {return a+b};
+
+No parameter example:
+----------------------------------------------
+//ES5
+var docES5=function doc() {
+console.log(document);
+};
+//ES6
+var docES6=() => {console.log(document);}
+docES6(); //document.......
+-------------------------------------------------------
+//ES5
+var setUserInfoEs5 = function setUserInfo(id,name) {
+return {
+id:id,
+name:name
+};
+};
+//ES6
+var setUserInfoEs6=(id,name) => ({ id:id,name:name});
+(setUserIdEs6(1,"asdfh")); //object {id:1,name:"asdfh"}
+
+-----------------------------------------------------------------
+
+var smartphones = [ {name:'samsung s6',price:700},
+                    {name:'iphone',price:1000}
+                   ];
+
+Using ES5:
+
+console.log(smartphones.map(
+           function(smartphone){
+           returnsmartphone.price;
+         }
+)); // [700,1000]
+
+
+
+
+
+
+
