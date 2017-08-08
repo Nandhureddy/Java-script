@@ -1,0 +1,39 @@
+
+
+<html>
+	<body>
+	<div id="timeDiv"> </div>
+	<br />
+	<input type="button" value="Start Clock" onclick="startClock()"/>
+	<input type="button" value="Stop Clock" onclick="stopClock()" />
+	
+	
+		<script type="text/javascript">
+		
+		// using setInterval and ClearInterval Methods.
+		
+		var Interval;
+		function startClock()
+		{
+			Interval = setInterval(getCurrentDate,1000);
+		}
+		
+		function stopClock()
+		{
+			clearInterval(Interval);
+		}
+		
+			function getCurrentDate()
+			{
+				document.getElementById("timeDiv").innerHTML = new Date();
+			}
+			
+			getCurrentDate();
+			
+			
+		</script>
+	</body>
+
+</html> 
+
+
